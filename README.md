@@ -1,8 +1,28 @@
-# React + Vite
+# Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation for React
 
-Currently, two official plugins are available:
+Follow these steps to set up Tailwind CSS in your React project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Step 1: Install Tailwind CSS, PostCSS, and Autoprefixer
+
+Run the following command to install Tailwind CSS along with `postcss` and `autoprefixer`:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+/** index.css **/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
