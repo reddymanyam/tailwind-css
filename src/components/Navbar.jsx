@@ -2,8 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
-      <div className='bg-purple-800 '> 
+      <div className='bg-purple-800  top-0 sticky'> 
         <nav className= 'text-white flex justify-between items-center p-2'>
           <span className='text-3xl font-bold'>Phones Mania</span>
           <div className='text-2xl' >
@@ -16,7 +15,6 @@ const Navbar = () => {
             <li className='cursor-pointer'>Contact Us</li>
           </ul>
         </nav>
-        </div>
     </div>
   )
 }

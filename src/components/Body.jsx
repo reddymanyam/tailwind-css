@@ -4,7 +4,7 @@ import phimg from '../assets/phonecall.png';
 const Body = () => {
   return (
     <div>
-      <div className='bg-pink-100 flex p-14 h-64 '>
+      <div className='bg-pink-100 flex p-14 h-64 border-b-4 border-pink-800 '>
         <div className='flex-[4]'>
           <div className='text-2xl' >
             The Best Phones in the town
